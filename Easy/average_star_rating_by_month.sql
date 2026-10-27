@@ -5,7 +5,7 @@
 -- Technique: GROUP BY with EXTRACT, AVG, ROUND, and ORDER BY
 -- Time complexity idea: O(n + g log g), where n is the number of rows and g is the number of groups, assuming hash-based grouping and sorting the grouped results.
 
---Solution:
+--Solution(postgresql):
 SELECT
     EXTRACT(MONTH FROM submit_date) AS mth,
     product_id AS product,
